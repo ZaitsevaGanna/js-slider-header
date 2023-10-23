@@ -3,11 +3,49 @@
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
 }}
 
-<main>
-	{{>heading title="Index" info=data.test}}
-</main>
 
+
+
+<div class="page">
+
+    <header class="header">
+        <div class="header_top">
+            <div class="header_list">
+                <a href="#" class="header_link">Home</a>
+                <a href="#" class="header_link">About</a>
+                <a href="#" class="header_link">Contact</a>
+            </div>
+            <button class="header_button header_button_open"></button>
+        </div>
+
+        <div class="header_wrapper">
+            <div class="header_bottom">
+                <div class="header_list header_list_top">
+                    <a href="#" class="header_link">Service</a>
+                    <a href="#" class="header_link">Privacy</a>
+                    <a href="#" class="header_link">Clients</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <main class="slider">
+        <div class="slider_content">
+            <img src="https://picsum.photos/600/400" class="slider_item" width="600" height='400'>
+            <img src="https://picsum.photos/600/400" class="slider_item" width="600" height="400">
+            <img src="https://picsum.photos/600/400" class="slider_item" width="600" height="400">
+            <img src="https://picsum.photos/600/400" class="slider_item" width="600" height="400">
+        </div>
+        <button class="slider_button slider_button_left"></button>
+        <button class="slider_button slider_button_right"></button>
+    </main>
+</div>
 {{!
-    Цей код містить лише те, що буде виводитись в <body>
+Цей код містить лише те, що буде виводитись в
+
+<body>
     Адже наш layout/default.hbs має вже структуру HTML
-}}
+    }}
